@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Baidu",
+  "version": "1.0",
+  "description": "Screenshot answer helper",
+  "permissions": [
+    "activeTab",
+    "clipboardRead"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [ "<all_urls>" ],
+      "js": [ "content.js" ],
+      "css": [ "style.css" ],
+      "all_frames": true
+    }
+  ]
+}
